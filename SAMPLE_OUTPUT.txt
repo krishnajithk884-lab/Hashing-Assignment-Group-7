@@ -1,0 +1,54 @@
+GROUP 7 - HASHING ASSIGNMENT
+=============================================
+Song IDs: 105, 210, 315, 420, 525, 630, 735, 840
+Hash method: Division Method + Linear Probing
+Table size: 11
+
+================ HASH TABLE ================
+Index   Song ID
+---------------------------------------------
+0       EMPTY
+1       210
+2       420
+3       630
+4       840
+5       EMPTY
+6       105
+7       315
+8       525
+9       735
+10      EMPTY
+=============================================
+
+Collision Analysis
+------------------
+Total collisions during insertion: 0
+Additional probes due to collisions: 0
+Load factor = n/m = 8/11 = 0.727 (72.73%)
+
+Sample Search Analysis
+----------------------
+
+Search for Song ID: 105
+Hashing Search : FOUND at table index 6 (1 comparison(s))
+Linear Search  : FOUND at array position 0 (1 comparison(s))
+
+Search for Song ID: 420
+Hashing Search : FOUND at table index 2 (1 comparison(s))
+Linear Search  : FOUND at array position 3 (4 comparison(s))
+
+Search for Song ID: 840
+Hashing Search : FOUND at table index 4 (1 comparison(s))
+Linear Search  : FOUND at array position 7 (8 comparison(s))
+
+Search for Song ID: 999
+Hashing Search : NOT FOUND (1 comparison(s))
+Linear Search  : NOT FOUND (8 comparison(s))
+
+=============================================
+Interactive Search
+Enter -1 to stop.
+
+Enter Song ID to search: -1
+
+Program completed successfully.
